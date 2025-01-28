@@ -3,20 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minimalist Website</title>
+  <title>Minimalist Website with Menu</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Minimalist Website</h1>
-    <p>Simple. Clean. Fast.</p>
+  <header class="top-banner">
+    <div class="logo">My Website</div>
+    <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+      <ul class="menu-items" id="menu-items">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <section>
-      <h2>About</h2>
-      <p>This is a lightweight website built for speed and simplicity.</p>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to our minimalist website! We strive for simplicity and functionality.</p>
     </section>
-    <section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Check out some of our amazing projects below.</p>
+    </section>
+    <section id="contact">
       <h2>Contact</h2>
       <p>Feel free to reach out via <a href="mailto:your.email@example.com">email</a>.</p>
     </section>
@@ -24,6 +37,11 @@
   <footer>
     <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu-items');
+      menu.classList.toggle('visible');
+    }
+  </script>
 </body>
 </html>
