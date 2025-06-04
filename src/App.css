@@ -76,7 +76,21 @@ body {
   margin: 0 auto 2rem auto; /* Center block element with max-width */
   max-width: 500px;
   box-shadow: inset 0 0 24px #ff00cc, inset 0 0 8px #00ffe7;
-  padding-bottom: 140px; /* ensure footer does not overlap content */
+  padding-bottom: 2rem; /* Reduced padding to end above footer */
+  position: relative;
+  margin-bottom: 140px; /* Move margin to bottom to create space for footer */
+}
+
+.datadads-main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #fff600;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 0 8px #ff00cc, 0 0 4px #00ffe7;
 }
 
 .datadads-footer {
@@ -158,28 +172,8 @@ body {
   outline: none;
 }
 
-@media (max-width: 700px) {
-  .datadads-header {
-    align-items: center;
-    position: relative;
-    margin: 2rem 0;  /* Keep the same margin as desktop */
-  }
-  .nav-menu {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  .nav-link-btn {
-    font-size: 1rem;
-    padding: 0.4rem 0.8rem;
-  }
-  .datadads-main {
-    padding-bottom: 110px;
-  }
-}
-
 .datadads-section {
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
   padding: 2rem 0 1rem 0;
   border-bottom: 2px dashed #ff00cc;
   scroll-margin-bottom: 140px; /* for fixed footer */
@@ -211,18 +205,31 @@ body {
   overflow: auto;
   user-select: none;
   text-align: left;
+  font-size: 1rem;
 }
 
 .footer-drag-handle {
   cursor: ns-resize;
-  height: 3px;
+  height: 24px;
   width: 100%;
-  background: #fff600; /* Simple solid yellow line */
+  background: #181818;
   border: none;
   margin: 0;
-  border-radius: 0; /* No rounding */
+  border-radius: 0;
   user-select: none;
-  box-shadow: none; /* No glow */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-drag-handle::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #fff600;
+  box-shadow: 0 0 8px #ff00cc, 0 0 4px #00ffe7;
+  border-radius: 9999px;
 }
 
 .terminal-chat {
@@ -235,6 +242,7 @@ body {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 1rem;
 }
 
 .terminal-user {
@@ -280,18 +288,6 @@ body {
   51%, 100% { opacity: 0; }
 }
 
-@media (max-width: 700px) {
-  .terminal-footer {
-    font-size: 0.8rem;
-    min-height: 90px;
-    max-height: 35vh;
-  }
-  .terminal-chat {
-    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
-    font-size: 0.9rem;
-  }
-}
-
 .no-select {
   user-select: none !important;
 }
@@ -327,23 +323,4 @@ body {
 .lang-btn:hover {
   color: #00ffe7;
   background: rgba(255,0,204,0.2);
-}
-
-@media (max-width: 700px) {
-  .datadads-header {
-    align-items: center;
-    position: relative;
-  }
-  .nav-menu {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  .nav-link-btn {
-    font-size: 1rem;
-    padding: 0.4rem 0.8rem;
-  }
-  .datadads-main {
-    padding-bottom: 110px;
-  }
 }
