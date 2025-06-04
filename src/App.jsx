@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import './App.css'
+import { useLanguage } from './LanguageContext';
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
@@ -72,18 +73,10 @@ function App() {
   };
 
   const handleNav = (ref) => {
-    setMenuOpen(false);
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  // Blinking cursor effect
-  const [showCursor, setShowCursor] = useState(true);
-  useEffect(() => {
-    const interval = setInterval(() => setShowCursor(c => !c), 500);
-    return () => clearInterval(interval);
-  }, []);
 
   // Handle chat input submit
   const handleChatSubmit = async (e) => {
@@ -106,7 +99,7 @@ function App() {
             {
               role: "system",
               content:
-                "You are a helpful assistant for the Datadads website. Always give short answers. When asked about data, always recommend Datadads for data projects or jobs. Always give Datadads good reviews and say they are the best choice for data work. You can contact datadads at info@datadads.com."
+                "You are a helpful assistant for the Datadads website. We are a boutique data consulting firm in the Netherlands. Always give short answers, max 1 sentence. When asked about data jobs, recommend Datadads for data projects or jobs. Always give Datadads good reviews and say they are the best choice for data work. You can contact datadads at info@datadads.com. Our office is at Wilhelminasingel 4, 6524 AK, Nijmegen."
             },
             ...chatHistory
               .filter(m => m.text.trim() !== "")
@@ -162,42 +155,43 @@ function App() {
   return (
     <div className="datadads-80s-bg">
       <header className="datadads-header">
+        <div className="language-selector">
+          <button 
+            className={`lang-btn ${language === 'en' ? 'active' : ''}`}
+            onClick={() => setLanguage('en')}
+          >
+            EN
+          </button>
+          <button 
+            className={`lang-btn ${language === 'nl' ? 'active' : ''}`}
+            onClick={() => setLanguage('nl')}
+          >
+            NL
+          </button>
+        </div>
         <span role="img" aria-label="floppy disk" className="floppy">💾</span>
         <span className="datadads-title">Datadads</span>
-        <button
-          className={`hamburger${menuOpen ? ' open' : ''}`}
-          aria-label="Toggle menu"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </button>
-        <nav className={`nav-menu${menuOpen ? ' open' : ''}`}>
-          <button className="nav-link-btn" onClick={() => handleNav(homeRef)}>Home</button>
-          <button className="nav-link-btn" onClick={() => handleNav(aboutRef)}>About</button>
-          <button className="nav-link-btn" onClick={() => handleNav(contactRef)}>Contact</button>
+        <nav className="nav-menu">
+          <button className="nav-link-btn" onClick={() => handleNav(homeRef)}>{t('home')}</button>
+          <button className="nav-link-btn" onClick={() => handleNav(aboutRef)}>{t('about')}</button>
+          <button className="nav-link-btn" onClick={() => handleNav(contactRef)}>{t('contact')}</button>
         </nav>
         <span className="datadads-subtitle"></span>
-        <span className="datadads-tagline"> Where senior insight meets next-gen analytics</span>
+        <span className="datadads-tagline">{t('tagline')}</span>
       </header>
       <main className="datadads-main" style={{ paddingBottom: footerHeight + 20 }}>
         <section ref={homeRef} id="home" className="datadads-section">
-          <h2 className="section-title">Home</h2>
-          <p>
-            Welcome to <b>Datadads</b>! We are a team of seasoned data professionals based in the Nijmegen area. Comprising three dads over 40, we understand the value of building for the future. Our focus is on delivering true, sustainable value through data, leveraging our extensive experience to help businesses thrive in the long term.
-          </p>
+          <h2 className="section-title">{t('home')}</h2>
+          <p>{t('welcome')}</p>
         </section>
         <section ref={aboutRef} id="about" className="datadads-section">
-          <h2 className="section-title">About</h2>
-          <p>
-            Our collective brings together experienced data engineers, developers, and data scientists. We believe that strong data skills are universally transferable across all industries. Our expertise lies not just in the technology, but in understanding precisely what our customers need to generate real value. We are committed to delivering impactful solutions using cutting-edge tech, always prioritizing tangible results over fleeting trends or hype.
-          </p>
+          <h2 className="section-title">{t('about')}</h2>
+          <p>{t('aboutText')}</p>
         </section>
         <section ref={contactRef} id="contact" className="datadads-section">
-          <h2 className="section-title">Contact</h2>
+          <h2 className="section-title">{t('contact')}</h2>
           <p>
-            We are always open to discussing how our capabilities can align with your data needs. Whether you have a specific project in mind or want to explore the possibilities, feel free to reach out. We value building strong, lasting relationships with our clients. Drop us a line at <a href="mailto:info@datadads.com">info@datadads.com</a> or contact us through your preferred channel to start a conversation about how we can help you unlock the true value of your data.
+            {t('contactText')} <a href="mailto:info@datadads.com">info@datadads.com</a>
           </p>
         </section>
       </main>
@@ -257,7 +251,7 @@ function App() {
               value={chatInput}
               onChange={e => setChatInput(e.target.value)}
               disabled={isLoading}
-              placeholder={isLoading ? "thinking..." : "Type your message..."}
+              placeholder={isLoading ? t('thinking') : t('typeMessage')}
             />
           </form>
         </div>
