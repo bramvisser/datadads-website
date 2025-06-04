@@ -33,8 +33,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  width: 100%;
 }
 
 .floppy {
@@ -161,6 +162,7 @@ body {
   .datadads-header {
     align-items: center;
     position: relative;
+    margin: 2rem 0;  /* Keep the same margin as desktop */
   }
   .nav-menu {
     flex-wrap: wrap;
@@ -328,12 +330,20 @@ body {
 }
 
 @media (max-width: 700px) {
-  .language-selector {
-    top: 0.5rem;
-    right: 4rem;
+  .datadads-header {
+    align-items: center;
+    position: relative;
   }
-  .lang-btn {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.4rem;
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .nav-link-btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .datadads-main {
+    padding-bottom: 110px;
   }
 }
