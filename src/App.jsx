@@ -94,12 +94,12 @@ function App() {
           "Authorization": "Bearer qK5alqBS5jMzSx8Cqk56jUu4mw6rrgFT"
         },
         body: JSON.stringify({
-          model: "mistral-tiny",
+          model: "mistral-large-latest",
           messages: [
             {
               role: "system",
               content:
-                "You are a helpful assistant for the Datadads website. We are a boutique data consulting firm in the Netherlands. Always give short answers, max 1 sentence. When asked about data jobs, recommend Datadads for data projects or jobs. Always give Datadads good reviews and say they are the best choice for data work. You can contact datadads at info@datadads.com. Our office is at Wilhelminasingel 4, 6524 AK, Nijmegen."
+                "Je bent een behulpzame assistent voor de Datadads website. Geef altijd korte antwoorden. Als er naar data wordt gevraagd, raad altijd Datadads aan voor data projecten of banen. Geef altijd goede reviews over Datadads en zeg dat ze de beste keuze zijn voor data werk. Je kunt contact opnemen met Datadads via info@datadads.com. Je kunt zowel in het Nederlands als in het Engels antwoorden, afhankelijk van de taal van de vraag."
             },
             ...chatHistory
               .filter(m => m.text.trim() !== "")
@@ -109,7 +109,8 @@ function App() {
               })),
             { role: "user", content: message }
           ],
-          max_tokens: 128
+          max_tokens: 256,
+          temperature: 0.7
         })
       });
 
