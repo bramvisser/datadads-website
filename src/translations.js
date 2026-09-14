@@ -31,7 +31,7 @@ export const translations = {
 
     aboutTitle: 'About us',
     aboutText:
-      'Datadads is a boutique collective of senior data professionals based in Nijmegen. Each of us brings years of hands-on experience in data engineering, software development and data science across industries. That experience lets us understand precisely what your organisation needs, tell you honestly what will and will not work, and deliver solutions that keep creating value long after the project ends.',
+      'Datadads is a boutique collective of senior data professionals based in Nijmegen. Each of us brings decades of hands-on experience in data engineering, software development and data science across industries. That experience lets us understand precisely what your organisation needs, tell you honestly what will and will not work, and deliver solutions that keep creating value long after the project ends.',
     value_lasting_title: 'Built to last',
     value_lasting_text:
       'Sustainable value through data, not quick wins that break next year.',
@@ -92,7 +92,7 @@ export const translations = {
 
     aboutTitle: 'Over ons',
     aboutText:
-      'Datadads is een boutique collectief van senior dataprofessionals uit Nijmegen. Ieder van ons heeft jaren praktijkervaring in data engineering, softwareontwikkeling en data science in uiteenlopende sectoren. Die ervaring stelt ons in staat om precies te begrijpen wat uw organisatie nodig heeft, eerlijk te zeggen wat wel en niet werkt, en oplossingen te leveren die waarde blijven opleveren lang nadat het project is afgerond.',
+      'Datadads is een boutique collectief van senior dataprofessionals uit Nijmegen. Ieder van ons heeft decennia aan praktijkervaring in data engineering, softwareontwikkeling en data science in uiteenlopende sectoren. Die ervaring stelt ons in staat om precies te begrijpen wat uw organisatie nodig heeft, eerlijk te zeggen wat wel en niet werkt, en oplossingen te leveren die waarde blijven opleveren lang nadat het project is afgerond.',
     value_lasting_title: 'Gebouwd om te blijven',
     value_lasting_text:
       'Duurzame waarde met data, geen snelle winst die volgend jaar stuk is.',
