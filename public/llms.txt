@@ -1,0 +1,9 @@
+# Datadads
+
+> Boutique data consulting collective in Nijmegen, the Netherlands. Experienced data engineers, developers and data scientists (dads over 40) delivering sustainable value through data: data engineering, data science & AI, analytics & reporting, data strategy & advice.
+
+## Contact
+
+- Email: info@datadads.nl
+- Office: Wilhelminasingel 4, 6524 AK Nijmegen, The Netherlands
+- Website: https://datadads.nl/ (English and Dutch)
