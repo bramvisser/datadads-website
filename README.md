@@ -23,8 +23,8 @@ npm run build                     # output in dist/
 
 ## Deploy
 
-Vercel builds from `main` on every push (project `datadads-website`, team `bramvissers-projects`).
-Manual: `vercel` for a preview, `vercel --prod` for production.
+Project `datadads-website`, team `bramvissers-projects`. Deploy with `vercel` for a preview and `vercel --prod` for production.
+Automatic deploys on push require the Vercel GitHub App (https://github.com/apps/vercel) to have access to this repo; then run `vercel git connect`.
 
 Environment variables (Vercel project settings or `vercel env add`):
 
@@ -41,7 +41,7 @@ DNS for `datadads.nl` is managed at Hostnet. Records pointing at Vercel:
 - `@`   A      `216.198.79.1` and `64.29.17.1` (Vercel's current recommendation; `76.76.21.21` also works)
 - `www` CNAME  `92ba730ee36b7a96.vercel-dns-017.com` (or `cname.vercel-dns.com`)
 
-`www.datadads.nl` redirects to the apex domain via the `redirects` rule in `vercel.json`.
+`www.datadads.nl` redirects (308) to the apex domain through the domain's redirect setting in the Vercel project (Settings → Domains).
 Check status with `vercel domains verify datadads.nl`.
 
 Mail (MX) records stay on Microsoft 365 and are unrelated to the website hosting.
