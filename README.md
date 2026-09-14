@@ -36,8 +36,11 @@ Environment variables (Vercel project settings or `vercel env add`):
 
 DNS for `datadads.nl` is managed at Hostnet. Records pointing at Vercel:
 
-- `@`   A      `76.76.21.21`
-- `www` CNAME  `cname.vercel-dns.com`
+- `@`   A      `216.198.79.1` and `64.29.17.1` (Vercel's current recommendation; `76.76.21.21` also works)
+- `www` CNAME  `92ba730ee36b7a96.vercel-dns-017.com` (or `cname.vercel-dns.com`)
+
+`www.datadads.nl` redirects to the apex domain via the `redirects` rule in `vercel.json`.
+Check status with `vercel domains verify datadads.nl`.
 
 Mail (MX) records stay on Microsoft 365 and are unrelated to the website hosting.
 

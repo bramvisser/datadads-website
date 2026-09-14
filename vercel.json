@@ -5,5 +5,13 @@
     "api/chat.js": {
       "maxDuration": 30
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.datadads.nl" }],
+      "destination": "https://datadads.nl/:path*",
+      "permanent": true
+    }
+  ]
 }
