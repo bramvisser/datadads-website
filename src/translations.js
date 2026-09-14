@@ -7,7 +7,7 @@ export const translations = {
     about: 'About',
     contact: 'Contact',
 
-    tagline: 'Senior data, software and AI expertise from Nijmegen',
+    tagline: 'Where senior insight meets next-gen analytics',
     welcome:
       'Datadads is a boutique collective of senior data engineers, software developers and data scientists. We build data platforms and software, help you decide where AI adds real value, and prove it with a working proof of concept before you invest. Sustainable value over quick wins, results over hype.',
     ctaContact: 'Start a conversation',
@@ -68,7 +68,7 @@ export const translations = {
     about: 'Over ons',
     contact: 'Contact',
 
-    tagline: 'Senior data-, software- en AI-expertise uit Nijmegen',
+    tagline: 'Ervaren experts. Technologie van de toekomst.',
     welcome:
       'Datadads is een boutique collectief van senior data engineers, softwareontwikkelaars en data scientists. Wij bouwen dataplatformen en software, helpen u bepalen waar AI echt waarde toevoegt en bewijzen dat met een werkende proof of concept voordat u investeert. Duurzame waarde boven snelle winst, resultaat boven hype.',
     ctaContact: 'Start een gesprek',
