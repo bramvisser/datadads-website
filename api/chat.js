@@ -36,10 +36,16 @@ const REFUSAL_REPLY = {
   nl: 'Sorry, daar kan ik niet bij helpen. Voor vragen over Datadads: mail info@datadads.nl.',
 };
 
+// ANTHROPIC_API_KEY is the standard name. The Vercel project also carries the key
+// under `ddwebsitechat` (a sensitive variable Vercel does not allow renaming).
+function apiKey() {
+  return process.env.ANTHROPIC_API_KEY || process.env.ddwebsitechat || '';
+}
+
 let client;
 function getClient() {
-  // Reads ANTHROPIC_API_KEY from the environment. Timeout is in milliseconds.
-  if (!client) client = new Anthropic({ timeout: UPSTREAM_TIMEOUT_MS, maxRetries: 1 });
+  // Timeout is in milliseconds.
+  if (!client) client = new Anthropic({ apiKey: apiKey(), timeout: UPSTREAM_TIMEOUT_MS, maxRetries: 1 });
   return client;
 }
 
@@ -125,8 +131,8 @@ export default async function handler(req, res) {
   }
   const language = body?.language === 'nl' ? 'nl' : 'en';
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('ANTHROPIC_API_KEY is not set');
+  if (!apiKey()) {
+    console.error('No Anthropic API key configured (ANTHROPIC_API_KEY)');
     return res.status(500).json({ error: 'not_configured' });
   }
 
@@ -160,7 +166,7 @@ export default async function handler(req, res) {
       return res.status(503).json({ error: 'busy' });
     }
     if (err instanceof Anthropic.AuthenticationError) {
-      console.error('Anthropic authentication failed; check ANTHROPIC_API_KEY');
+      console.error('Anthropic authentication failed; check the API key variable');
       return res.status(500).json({ error: 'not_configured' });
     }
     if (err instanceof Anthropic.APIConnectionError) {

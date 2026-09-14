@@ -32,6 +32,8 @@ Environment variables (Vercel project settings or `vercel env add`):
 | ----------------- | ------------------ | -------------------------------- |
 | `ANTHROPIC_API_KEY` | production, preview | Server-side key for `api/chat.js` |
 
+The Vercel project currently stores this key under the name `ddwebsitechat`; `api/chat.js` accepts either name. Vercel cannot rename sensitive variables, so to move to the standard name, add `ANTHROPIC_API_KEY` and delete `ddwebsitechat`.
+
 ## Domain
 
 DNS for `datadads.nl` is managed at Hostnet. Records pointing at Vercel:
