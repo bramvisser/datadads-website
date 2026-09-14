@@ -7,51 +7,53 @@ export const translations = {
     about: 'About',
     contact: 'Contact',
 
-    tagline: 'Where senior insight meets next-gen analytics',
+    tagline: 'Senior data, software and AI expertise from Nijmegen',
     welcome:
-      'Welcome to Datadads! We are a team of seasoned data professionals based in the Nijmegen area. Comprising dads over 40, we understand the value of building for the future. Our focus is on delivering true, sustainable value through data, leveraging our extensive experience to help businesses thrive in the long term.',
-    ctaContact: 'Get in touch',
+      'Datadads is a boutique collective of senior data engineers, software developers and data scientists. We build data platforms and software, help you decide where AI adds real value, and prove it with a working proof of concept before you invest. Sustainable value over quick wins, results over hype.',
+    ctaContact: 'Start a conversation',
     ctaChat: 'Ask our assistant',
 
     servicesTitle: 'What we do',
     servicesIntro:
-      'Experienced data engineers, developers and data scientists. Strong data skills transfer to every industry, so we focus on what your business actually needs.',
-    service_engineering_title: 'Data engineering',
+      'Senior specialists who have built and run data and software solutions across industries. We keep teams small, so you work directly with the people doing the work.',
+    service_engineering_title: 'Data & software solutions',
     service_engineering_text:
-      'Pipelines, platforms and data models built to keep working long after the project ends.',
-    service_science_title: 'Data science & AI',
-    service_science_text:
-      'Models and AI that answer a real business question, chosen for results rather than hype.',
+      'Data platforms, pipelines and the custom software around them, built to run for years rather than just until the handover.',
+    service_advice_title: 'AI advice',
+    service_advice_text:
+      "Straight answers on where AI adds value in your organisation and where it doesn't, from people who build it themselves.",
+    service_poc_title: 'AI proof of concept',
+    service_poc_text:
+      'A working prototype on your own data, so you decide on evidence instead of slides.',
     service_analytics_title: 'Analytics & reporting',
     service_analytics_text:
-      'Clear dashboards and insight your teams actually use to make decisions.',
-    service_strategy_title: 'Data strategy & advice',
-    service_strategy_text: 'Senior guidance on what to build, what to buy and what to skip.',
+      'Dashboards and reporting your teams actually use to make decisions.',
 
     aboutTitle: 'About us',
     aboutText:
-      'Our collective brings together experienced data engineers, developers, and data scientists. We believe that strong data skills are universally transferable across all industries. Our expertise lies not just in the technology, but in understanding precisely what our customers need to generate real value. We are committed to delivering impactful solutions using cutting-edge tech, always prioritizing tangible results over fleeting trends or hype.',
+      'Datadads is a boutique collective of senior data professionals based in Nijmegen. Each of us brings years of hands-on experience in data engineering, software development and data science across industries. That experience lets us understand precisely what your organisation needs, tell you honestly what will and will not work, and deliver solutions that keep creating value long after the project ends.',
     value_lasting_title: 'Built to last',
     value_lasting_text:
-      'We deliver sustainable value through data, not quick wins that break next year.',
+      'Sustainable value through data, not quick wins that break next year.',
     value_results_title: 'Results over hype',
-    value_results_text: 'Cutting-edge tech where it pays off, tangible outcomes first.',
+    value_results_text: 'Cutting-edge technology where it pays off, tangible outcomes first.',
     value_senior_title: 'Senior by default',
-    value_senior_text: 'Dads over 40 with decades of hands-on experience across industries.',
+    value_senior_text:
+      'Every project is staffed by experienced specialists. You work directly with the people doing the work.',
 
     contactTitle: 'Contact',
     contactText:
-      'We are always open to discussing how our capabilities can align with your data needs. Whether you have a specific project in mind or want to explore the possibilities, feel free to reach out. We value building strong, lasting relationships with our clients.',
+      "Have a concrete project, want a second opinion on your AI plans, or an idea to test with a proof of concept? Tell us what you're working on and we'll think it through with you.",
     emailLabel: 'Email',
     addressLabel: 'Office',
     country: 'The Netherlands',
 
-    footerTagline: 'Boutique data consulting from Nijmegen',
+    footerTagline: 'Boutique data & AI consulting from Nijmegen',
 
     chatOpen: 'Ask Datadads',
     chatTitle: 'Datadads assistant',
     chatClose: 'Close chat',
-    chatIntro: 'Hi! Ask me anything about Datadads and what we do.',
+    chatIntro: 'Hi! Ask me anything about Datadads, our services or a possible project.',
     chatLabel: 'Your message to the Datadads assistant',
     typeMessage: 'Type your message...',
     thinking: 'thinking...',
@@ -66,52 +68,53 @@ export const translations = {
     about: 'Over ons',
     contact: 'Contact',
 
-    tagline: 'Ervaren experts. Technologie van de toekomst.',
+    tagline: 'Senior data-, software- en AI-expertise uit Nijmegen',
     welcome:
-      'Welkom bij Datadads! Wij zijn een team van ervaren data professionals uit de regio Nijmegen. Als vaders van boven de 40 begrijpen we de waarde van bouwen voor de toekomst. Onze focus ligt op het leveren van echte, duurzame waarde door middel van data, waarbij we onze uitgebreide ervaring inzetten om bedrijven op lange termijn te laten groeien.',
-    ctaContact: 'Neem contact op',
+      'Datadads is een boutique collectief van senior data engineers, softwareontwikkelaars en data scientists. Wij bouwen dataplatformen en software, helpen u bepalen waar AI echt waarde toevoegt en bewijzen dat met een werkende proof of concept voordat u investeert. Duurzame waarde boven snelle winst, resultaat boven hype.',
+    ctaContact: 'Start een gesprek',
     ctaChat: 'Vraag het onze assistent',
 
     servicesTitle: 'Wat we doen',
     servicesIntro:
-      'Ervaren data engineers, ontwikkelaars en data scientists. Sterke datavaardigheden zijn toepasbaar in elke sector, dus wij richten ons op wat uw bedrijf echt nodig heeft.',
-    service_engineering_title: 'Data engineering',
+      'Senior specialisten die in uiteenlopende sectoren data- en softwareoplossingen hebben gebouwd en beheerd. We houden teams klein, zodat u direct werkt met de mensen die het werk doen.',
+    service_engineering_title: 'Data- & softwareoplossingen',
     service_engineering_text:
-      'Pipelines, platformen en datamodellen die blijven werken, ook lang na het project.',
-    service_science_title: 'Data science & AI',
-    service_science_text:
-      'Modellen en AI die een echte bedrijfsvraag beantwoorden, gekozen op resultaat en niet op hype.',
+      'Dataplatformen, pipelines en de maatwerksoftware eromheen, gebouwd om jaren mee te gaan en niet alleen tot de oplevering.',
+    service_advice_title: 'AI-advies',
+    service_advice_text:
+      'Eerlijke antwoorden over waar AI waarde toevoegt in uw organisatie en waar niet, van mensen die het zelf bouwen.',
+    service_poc_title: 'AI proof of concept',
+    service_poc_text:
+      'Een werkend prototype op uw eigen data, zodat u beslist op basis van bewijs in plaats van slides.',
     service_analytics_title: 'Analytics & rapportage',
     service_analytics_text:
-      'Heldere dashboards en inzichten die uw teams daadwerkelijk gebruiken om beslissingen te nemen.',
-    service_strategy_title: 'Datastrategie & advies',
-    service_strategy_text: 'Senior advies over wat u bouwt, wat u koopt en wat u overslaat.',
+      'Dashboards en rapportages die uw teams daadwerkelijk gebruiken om beslissingen te nemen.',
 
     aboutTitle: 'Over ons',
     aboutText:
-      'Ons collectief brengt ervaren data engineers, ontwikkelaars en data scientists samen. Wij geloven dat sterke data vaardigheden universeel toepasbaar zijn in alle sectoren. Onze expertise ligt niet alleen in de technologie, maar ook in het precies begrijpen van wat onze klanten nodig hebben om echte waarde te genereren. Wij zetten ons in voor het leveren van impactvolle oplossingen met de nieuwste technologie, waarbij we altijd tastbare resultaten voorop stellen boven vluchtige trends of hypes.',
+      'Datadads is een boutique collectief van senior dataprofessionals uit Nijmegen. Ieder van ons heeft jaren praktijkervaring in data engineering, softwareontwikkeling en data science in uiteenlopende sectoren. Die ervaring stelt ons in staat om precies te begrijpen wat uw organisatie nodig heeft, eerlijk te zeggen wat wel en niet werkt, en oplossingen te leveren die waarde blijven opleveren lang nadat het project is afgerond.',
     value_lasting_title: 'Gebouwd om te blijven',
     value_lasting_text:
-      'Wij leveren duurzame waarde met data, geen snelle winst die volgend jaar stuk is.',
+      'Duurzame waarde met data, geen snelle winst die volgend jaar stuk is.',
     value_results_title: 'Resultaat boven hype',
     value_results_text: 'De nieuwste technologie waar het loont, tastbare resultaten voorop.',
     value_senior_title: 'Senior als standaard',
     value_senior_text:
-      'Vaders van boven de 40 met tientallen jaren praktijkervaring in uiteenlopende sectoren.',
+      'Elk project wordt bemand door ervaren specialisten. U werkt direct met de mensen die het werk doen.',
 
     contactTitle: 'Contact',
     contactText:
-      'We staan altijd open voor een gesprek over hoe onze mogelijkheden kunnen aansluiten bij uw databehoeften. Of u nu een specifiek project in gedachten heeft of de mogelijkheden wilt verkennen, neem gerust contact op. We hechten waarde aan het opbouwen van sterke, langdurige relaties met onze klanten.',
+      'Heeft u een concreet project, wilt u een second opinion op uw AI-plannen of een idee toetsen met een proof of concept? Vertel ons waar u aan werkt, dan denken we graag met u mee.',
     emailLabel: 'E-mail',
     addressLabel: 'Kantoor',
     country: 'Nederland',
 
-    footerTagline: 'Boutique dataconsultancy uit Nijmegen',
+    footerTagline: 'Boutique data- & AI-consultancy uit Nijmegen',
 
     chatOpen: 'Vraag het Datadads',
     chatTitle: 'Datadads-assistent',
     chatClose: 'Chat sluiten',
-    chatIntro: 'Hoi! Stel gerust een vraag over Datadads en wat we doen.',
+    chatIntro: 'Hoi! Stel gerust een vraag over Datadads, onze diensten of een mogelijk project.',
     chatLabel: 'Je bericht aan de Datadads-assistent',
     typeMessage: 'Typ je bericht...',
     thinking: 'bezig...',

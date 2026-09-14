@@ -2,9 +2,9 @@ import { useLanguage } from '../LanguageContext';
 
 const SERVICES = [
   { key: 'engineering', icon: '⚙️' },
-  { key: 'science', icon: '🤖' },
+  { key: 'advice', icon: '🧭' },
+  { key: 'poc', icon: '🧪' },
   { key: 'analytics', icon: '📈' },
-  { key: 'strategy', icon: '🧭' },
 ];
 
 export default function Services() {

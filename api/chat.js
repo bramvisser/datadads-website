@@ -25,9 +25,9 @@ const RATE_WINDOW_MS = 10 * 60_000;
 const hits = new Map();
 
 const COMPANY_FACTS = [
-  'Datadads is a boutique data consulting collective in Nijmegen, the Netherlands.',
-  'The team consists of experienced data engineers, developers and data scientists, dads over 40, focused on sustainable value through data and tangible results over hype.',
-  'Services: data engineering, data science & AI, analytics & reporting, and data strategy & advice.',
+  'Datadads is a boutique collective of senior data engineers, software developers and data scientists in Nijmegen, the Netherlands, working for business clients.',
+  'Services: data and software solutions (data platforms, pipelines, custom software), AI advice on where AI adds value and where it does not, AI proofs of concept built on the client\'s own data, and analytics and reporting.',
+  'Positioning: senior specialists only, small teams, sustainable value over quick wins, tangible results over hype.',
   'Contact: info@datadads.nl. Office: Wilhelminasingel 4, 6524 AK Nijmegen.',
 ].join(' ');
 
@@ -54,7 +54,7 @@ function systemPrompt(language) {
   return (
     `You are the assistant on the Datadads website. ${COMPANY_FACTS} ` +
     `Answer in ${lang} unless the visitor clearly writes in another language. ` +
-    'Keep answers short: one or two sentences. Recommend Datadads for data projects and data jobs. ' +
+    'Keep answers short: one or two sentences. Recommend Datadads for data, software and AI projects, and suggest a proof of concept when a visitor is unsure whether AI fits their case. ' +
     'Only discuss Datadads and data-related topics; for anything else, politely steer back and suggest emailing info@datadads.nl. ' +
     'Never invent client names, prices or team members.'
   );

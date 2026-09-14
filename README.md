@@ -1,6 +1,6 @@
 # Datadads website
 
-Marketing site for Datadads, a boutique data consulting collective in Nijmegen.
+Marketing site for Datadads, a boutique collective of senior data, software and AI specialists in Nijmegen.
 Live at https://datadads.nl. React 19 + Vite, hosted on Vercel with one serverless
 function (`api/chat.js`) that proxies the on-site assistant to Anthropic (Claude Sonnet).
 

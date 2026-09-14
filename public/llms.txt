@@ -1,6 +1,6 @@
 # Datadads
 
-> Boutique data consulting collective in Nijmegen, the Netherlands. Experienced data engineers, developers and data scientists (dads over 40) delivering sustainable value through data: data engineering, data science & AI, analytics & reporting, data strategy & advice.
+> Boutique collective of senior data engineers, software developers and data scientists in Nijmegen, the Netherlands. For business clients: data and software solutions (data platforms, pipelines, custom software), AI advice, AI proofs of concept on your own data, and analytics and reporting. Sustainable value over quick wins, results over hype.
 
 ## Contact
 
