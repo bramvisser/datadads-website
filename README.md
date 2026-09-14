@@ -23,8 +23,14 @@ npm run build                     # output in dist/
 
 ## Deploy
 
-Project `datadads-website`, team `bramvissers-projects`. Deploy with `vercel` for a preview and `vercel --prod` for production.
-Automatic deploys on push require the Vercel GitHub App (https://github.com/apps/vercel) to have access to this repo; then run `vercel git connect`.
+Project `datadads-website`, team `bramvissers-projects`. Deploys are done from the CLI, not from GitHub pushes:
+
+```bash
+vercel          # preview deployment
+vercel --prod   # production (datadads.nl)
+```
+
+Push to GitHub separately to keep the repo in sync (`git push origin main`).
 
 Environment variables (Vercel project settings or `vercel env add`):
 
