@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment & platform
+.env
+.env.*
+!.env.example
+.vercel
+
+# Legacy committed build output (Vercel now builds from source)
+docs
